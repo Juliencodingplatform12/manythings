@@ -33,3 +33,10 @@ for (let i = 0; i < 10; i++) {
     rect(r.x, r.y, r.width, r.height);
   }
 }
+function mousePressed() {
+  for (let i = 0; i < rectangles.length; i++) {
+    let r = rectangles[i];
+    // Change the color of the rectangle to a random color
+    r.color = color(random(255), random(255), random(255));
+  }
+}
