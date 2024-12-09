@@ -23,9 +23,8 @@ for (let i = 0; i < 10; i++) {
         } else {
           r.speed = random(1, 3); 
         }
-   
-    r.width += 0.1; // Slowly increase the width
-    r.height += 0.05; // Slowly increase the height
+    r.width += 0.1; 
+    r.height += 0.05; 
     r.y += r.speed;
     if (r.y > height) {
       r.y = -r.height;
