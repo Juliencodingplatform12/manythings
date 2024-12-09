@@ -16,3 +16,10 @@ for (let i = 0; i < 10; i++) {
 }
   function draw() {
     background(220);
+    for (let i = 0; i < rectangles.length; i++) {
+        let r = rectangles[i];
+        if (mouseX > width / 2) {
+          r.speed = 5; 
+        } else {
+          r.speed = random(1, 3); 
+        }
