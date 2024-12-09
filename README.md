@@ -1,1 +1,4 @@
-# manythings
+let rectangles = [];
+
+function setup() {
+  createCanvas(400, 400);
