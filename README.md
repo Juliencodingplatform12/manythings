@@ -23,3 +23,20 @@ for (let i = 0; i < 10; i++) {
         } else {
           r.speed = random(1, 3); 
         }
+    // Increase the size of the rectangle over time
+    r.width += 0.1; // Slowly increase the width
+    r.height += 0.05; // Slowly increase the height
+
+    // Move the rectangle downwards by its speed
+    r.y += r.speed;
+
+    // If the rectangle goes off the bottom, reset it to the top
+    if (r.y > height) {
+      r.y = -r.height;
+    }
+
+    // Draw the rectangle with its current position, size, and color
+    fill(r.color);
+    rect(r.x, r.y, r.width, r.height);
+  }
+}
