@@ -14,3 +14,5 @@ for (let i = 0; i < 10; i++) {
        rectangles[rectangles.length] = rectObj;
   }
 }
+  function draw() {
+    background(220);
